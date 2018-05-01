@@ -58,7 +58,11 @@
         <div class="container-fluid" id="QndA">
             <div class="row">
                     <div class="col-md-12">
+                      {%  if result|length == 0  %}
                         <img src="" id="preview">
+                          {% else %}
+                        <img src="/{{im}}" id="preview">
+                      {% endif %}
                     </div>
                 </div>
 
